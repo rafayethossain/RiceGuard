@@ -11,7 +11,7 @@ Welcome to the **Rice Disease Classification** project. This guide provides a co
   - [🚀 Environment Setup](#-environment-setup)
     - [1. Create a Virtual Environment](#1-create-a-virtual-environment)
     - [2. Activate the Environment](#2-activate-the-environment)
-    - [3. Install Required Dependencies](#3-install-required-dependencies)
+    - [3. Install Dependencies](#3-install-dependencies)
   - [📂 Project Configuration](#-project-configuration)
   - [📓 Running the Notebook](#-running-the-notebook)
   - [🔧 Local Path Adjustments](#-local-path-adjustments)
@@ -49,11 +49,10 @@ python -m venv venv
     ```bash
     source venv/bin/activate
     ```
-
-### 3. Install Required Dependencies
+### 3. Install Dependencies
 With the environment activated, install the necessary libraries:
 ```bash
-pip install tensorflow matplotlib numpy jupyter gradio
+pip install -r requirements_app.txt
 ```
 
 ---
