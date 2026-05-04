@@ -15,6 +15,10 @@ RiceGuard AI is divided into two main phases:
 *   **Python:** 3.10+ recommended.
 *   **Tools:** Pip, Virtual Environment (`venv`), Jupyter Notebook (VS Code).
 *   **Hardware:** 8GB+ RAM (Recommended for training).
+*   **Train Data Source: Google Drive Link:**  [Google Drive Link](https://drive.google.com/file/d/1Rs2UlLooaQuw8ToTTXTlPZ56f-siS3Tc/view?usp=drive_link)
+
+
+   
 
 ---
 

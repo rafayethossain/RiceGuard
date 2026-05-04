@@ -5,12 +5,19 @@ Welcome to the **Rice Disease Classification** project. This guide provides a co
 ---
 
 ## 📋 Table of Contents
-1. [Prerequisites](#-prerequisites)
-2. [Environment Setup](#-environment-setup)
-3. [Project Configuration](#-project-configuration)
-4. [Running the Notebook](#-running-the-notebook)
-5. [Local Path Adjustments](#-local-path-adjustments)
-6. [Training Workflow](#-training-workflow)
+- [Rice Disease Classification: Model Building Guide](#rice-disease-classification-model-building-guide)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🛠 Prerequisites](#-prerequisites)
+  - [🚀 Environment Setup](#-environment-setup)
+    - [1. Create a Virtual Environment](#1-create-a-virtual-environment)
+    - [2. Activate the Environment](#2-activate-the-environment)
+    - [3. Install Required Dependencies](#3-install-required-dependencies)
+  - [📂 Project Configuration](#-project-configuration)
+  - [📓 Running the Notebook](#-running-the-notebook)
+  - [🔧 Local Path Adjustments](#-local-path-adjustments)
+    - [1. Update Extraction Logic](#1-update-extraction-logic)
+    - [2. Update Dataset Paths](#2-update-dataset-paths)
+  - [🔄 Training Workflow](#-training-workflow)
 
 ---
 
@@ -60,7 +67,8 @@ Ensure your directory structure looks like this:
 ├── plant_small.zip
 └── venv/
 ```
-
+*   **Train Data Source: Google Drive Link:**  [Google Drive Link](https://drive.google.com/file/d/1Rs2UlLooaQuw8ToTTXTlPZ56f-siS3Tc/view?usp=drive_link)
+*   
 ---
 
 ## 📓 Running the Notebook
