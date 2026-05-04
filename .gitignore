@@ -1,0 +1,25 @@
+# Virtual Environments
+venv/
+app_env/
+env/
+.env
+
+# Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Large Data & Models (GitHub has a 100MB limit per file)
+*.zip
+*.keras
+*.tflite
+plant_data/
+plant_small/
+
+# OS Specific
+.DS_Store
+Thumbs.db

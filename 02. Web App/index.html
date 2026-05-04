@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiceGuard AI | Diagnosis & XAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    
+    <main class="app-container">
+        <header>
+            <div class="logo">RiceGuard<span>AI</span></div>
+            <p class="subtitle">Next-Gen Agricultural Intelligence</p>
+        </header>
+
+        <!-- Task 3.2: Drag & Drop Upload -->
+        <section class="glass-card upload-section" id="drop-zone">
+            <div class="upload-content">
+                <div class="icon-pulse">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 16V12M12 12V8M12 12H8M12 12H16" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                </div>
+                <h3>Drop Leaf Image</h3>
+                <p>Drag & Drop or click to browse</p>
+                <input type="file" id="file-input" accept="image/*" hidden>
+            </div>
+            <div id="preview-container" class="hidden">
+                <img id="image-preview" src="" alt="Preview">
+                <button id="cancel-btn" class="secondary-btn">Change Image</button>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="diagnose-btn" class="primary-btn" disabled>Initialize Diagnosis</button>
+        </section>
+
+        <!-- Task 3.3 & 5.1: Results Dashboard -->
+        <section id="results-section" class="glass-card results-card hidden">
+            <div class="diagnosis-header">
+                <div class="status-badge">Analysis Complete</div>
+                <h2 id="result-label">Result</h2>
+                <div class="confidence-container">
+                    <div class="progress-bar"><div id="confidence-bar" class="progress-fill"></div></div>
+                    <span id="confidence-text">0% Confidence</span>
+                </div>
+            </div>
+
+            <!-- Task 5.1: XAI Heatmap Display -->
+            <div class="xai-container">
+                <h4>AI Focus Area (XAI Heatmap)</h4>
+                <p class="xai-hint">Glow areas show where the AI detected disease patterns.</p>
+                <img id="heatmap-img" src="" alt="AI Focus Heatmap">
+            </div>
+
+            <!-- Task 5.3: Treatment Advice -->
+            <div class="treatment-section">
+                <h4>Treatment Protocol</h4>
+                <p id="treatment-desc" class="desc"></p>
+                <ul id="treatment-steps"></ul>
+            </div>
+
+            <div class="top-predictions">
+                <h4>Top Probability Distribution</h4>
+                <div id="prediction-list"></div>
+            </div>
+
+            <button onclick="window.location.reload()" class="secondary-btn full-width">Perform New Scan</button>
+        </section>
+
+        <div id="loader" class="loader-overlay hidden">
+            <div class="scanner"></div>
+            <p>Scanning Neural Patterns...</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
